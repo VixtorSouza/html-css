@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, #00AB52, #1EF786)   
+        }
+        p {
+            text-align: justify;
+            text-indent: 20px;
+        }
+
+        div {
+            background-color: #FF4C38;
+            height: 200px;
+            width: 200px;
+            border: 5px solid black;
+            margin: 10px auto 10px auto;
+            
+        
+            
+            
+
+            
+        }
+
+        div:hover {
+            background-color: yellow;
+        }
+
+        .enfase {
+            text-decoration: underline;
+            color:red;
+            font-style: italic;
+        }
+
+        h1#especial {
+            color: blue;
+            text-align:center;
+        }
+        .caixameio {
+            display:inline-block;
+            margin: auto 15px auto 15px;
+            outline: 2px dotted red;
+            padding: 10px;
+            
+        }
+        a {
+            font-size: 18px;
+        }
+        a:hover {
+            color: lightblue;
+        }
+
+        a:visited {
+            color:black;
+        }
+        a::before{
+            content: '*'
+        }
+        a::after {
+            content:'*'
+        }
+        
+        </style>
+</head>
+<body>
+    <h1>Pseudo class em caixa</h1>
+    
+    
+        <div class="caixameio"></div>
+        <div class="caixameio"></div>
+        
+    
+    
+      <h1>aksaskaksska</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quas corporis numquam repellendus aliquam nihil accusantium ipsum quam, <span class="enfase">distinctio</span> unde porro repudiandae sed eos quasi nisi dolor sequi in consectetur?</p>
+    <h1>ajkskansa</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt accusamus, illo aspernatur debitis eum ipsa reiciendis excepturi voluptatibus ut. Tempore, rem. <span class="enfase">Quaerat perferendis</span> commodi inventore nesciunt. Quisquam quis eveniet dignissimos.</p>
+    <h1 id="especial">ESPECIAL</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur deserunt voluptas quia, eius placeat nobis ea aspernatur unde necessitatibus quo <span class="enfase">totam quidem</span> at sed omnis explicabo, corrupti sint molestias provident?</p>
+
+    <div></div>
+
+    <a href="#">Teste</a>
+    
+</body>
+</html>

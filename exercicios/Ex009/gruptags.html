@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+            background-color: rgb(20, 134, 18);
+        }
+        nav {
+            text-decoration:none;
+            background-color: rgb(46, 103, 46);
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.381);
+            border-radius:20px;
+            width: 800px;
+           
+        }
+        nav > a {
+            color: white;
+            
+            margin-right: 66px;
+            padding: 15px;
+            text-decoration: none;
+
+        }
+        nav > a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+        header {
+            background-color: lightgreen;
+            padding: 10px;
+            margin: 10px;
+         
+        }
+
+        main {
+            background-color:rgb(76, 200, 123);
+            padding: 6px;
+            margin: 10px;
+         
+        }
+
+        footer {
+            text-align: center;
+            font-style: italic;
+            background-color:rgb(70, 190, 102);
+            margin: 1px;
+        }
+        footer > p {
+            text-align: center;
+            margin: 0px;
+            
+        }
+        p {
+            text-indent: 20px;
+            text-align: justify;
+        }
+
+
+        h1 {
+            text-shadow: 1px 1px  1px rgba(0, 0, 0, 0.421);
+            font-size: 3em;
+        }
+
+      div#circulo{
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+        text-align: center;
+      }
+
+      div#arrendondada {
+        width: 100px;
+        height: 100px;
+        background: lightgreen;
+        border-radius: 20px;
+      }
+      div#arrendondada:hover {
+        border-radius: 0px;
+        transition: 1.5s;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <!--Cabeçalho= header
+            Cabeça = head
+             Todas tags semânticas são "divs"-->
+
+            <h1>Meu site</h1>
+            <nav>
+                <!--
+                    Para navegação e links, por exemplo o menu
+                -->
+                <a href="#">Inicio</a>
+                <a href="#">Assuntos</a>
+                <a href="#">Novidades</a>
+                <a href="#">Pesquisa</a>
+                <a href="#">Contato</a>
+            </nav>
+    </header>
+    <main>
+        <!--
+            PARA CONTÊUDO PRINCIPAL 
+        -->
+        <section id="assuntos">
+            <h2>Assuntos</h2>
+            <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ducimus numquam reprehenderit dolores sit deleniti fuga ipsa minima, corrupti vitae illo debitis inventore magni voluptate cumque odit, repellat officia dolor.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ipsum voluptatum. Minima quos, modi recusandae, nobis maxime illum ratione necessitatibus sapiente aperiam beatae expedita a nostrum saepe fugit? Perferendis, expedita.</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore unde ad asperiores quis, nobis nostrum temporibus maiores totam. Ut reprehenderit deleniti aut quis? Sit voluptates facere voluptatem adipisci iste est.</p>
+
+        </section>
+        <section id="Noticia">
+            
+            <!--Não sei exatamente o que é uma seção-->
+            <article>
+                <!--literalmente um artigo-->
+                <aside id="clateral">
+                        <!--Conteudo lateral-->
+                        <p><strong>Artigo escrito por Victor(exemplo)</strong></p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <!--
+            Rodapé para colocar links de rede social ou contato
+        -->
+        <p>&copy;Desenvolvido pelo curso em video</p>
+    </footer>
+    
+
+
+    <div id="circulo">circulo</div>
+    <div id="arrendondada">borda arrendondada virando borda normal</div>
+
+</body>
+</html>
