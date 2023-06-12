@@ -1,0 +1,17 @@
+body {
+    background-color: lightgrey;
+
+}
+
+.basico {
+    color: red;
+    background-color: black;
+}
+.intermediario {
+    color: blue;
+    background-color: black;
+}
+.avancado {
+    color: green;
+    background-color: black;
+}
