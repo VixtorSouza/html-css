@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color:blue;
+        }
+        a::after {
+            content: '🔗';
+        }
+        a::before {
+            content: '🔗';
+        }
+
+        .enfase {
+            background-color: lightgreen;
+            width: 200px;
+            color:white;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="https://www.youtube.com" target="_blank" class="enfase">Youtube</a></li>
+        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+    </ul>
+    
+</body>
+</html>
