@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'passionOne';
+    src: url('fonts/PassionOne-Bold.ttf') format('truetype');
+
+    font-family: 'sri' ;
+    src:url('fonts/Sriracha-Regular.ttf') format('truetype');
+}
+
+header#partesuperior {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: -10px;
+
+    
+}
+
+header#partesuperior  a {
+    color: white;
+    
+}
+
+header#partesuperior h1 {
+    font-family:  'passionOne'  ; 
+    font-size:5em;
+    font-weight: bold;
+    margin-bottom: -2px;
+  
+  
+}
+
+p {
+    font-family: 'sri';
+    font-size: 2em;
+    text-indent: 50px;
+}
