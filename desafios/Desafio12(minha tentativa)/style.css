@@ -32,7 +32,7 @@ header#partesuperior h1 {
     font-family:'passionOne'; 
     font-size:136px;
     margin-bottom: -2px;
-    margin-top: 1px;
+    margin-top: 31px;
     text-transform: uppercase;
   
 }
@@ -44,10 +44,12 @@ header#partesuperior p {
 
 }
 
-p {
+section p {
     font-family: 'sri';
-    font-size: 2em;
+    font-size: 3em;
     text-indent: 50px;
+    
+   
 }
 
 p.fontdiferente {
@@ -59,7 +61,9 @@ footer {
     margin-bottom: -30px;
     margin-right: -8px;
     margin-left: -8px;
+    margin-top: 30px;
     text-align: center;
+    
     
     
 }
@@ -67,6 +71,7 @@ footer {
 footer > p {
     color: white;
     font-size: 1em;
+    padding: 10px;
 }
 
 footer > p > a {
@@ -90,17 +95,27 @@ section#imagem0 {
     background-image: url(imagens/background001.jpg);
     background-position: center center;
     background-attachment: fixed;
+    padding: 20px 20px 20px 40px;
+    margin: -8px;
 }
 
 section#imagem1 {
     background-image: url(imagens/background002.jpg);
     background-position: center center;
     background-attachment: fixed;
+    padding: 20px 20px 20px 40px;
+    margin: -8px;
 }
 
-div{
+div {
     color: white;
-    background-color: black;
-    background-size: 50px;
+    background-color: rgba(0, 0, 0, 0.651);
+    width: 650px;
+    
+    
   
+}
+
+div > p {
+    padding: -50px;
 }
