@@ -15,11 +15,20 @@
             width: 450px;
             border-collapse: collapse;
             background-color: lightgray;
+            position: relative;
         }
         td, th {
             border: 1.2px dashed darkcyan;
             padding: 8px;
         }
+
+        thead > tr > th {
+            position: sticky; 
+            top: -1px;
+            background-color: gray;
+         
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
@@ -46,7 +55,9 @@
     </style>
 </head>
 <body>
+    
     <main>
+    <!--è preciso um cabeçalho de tabela fixo para não se perder-->
         <h1>Tables Maiores (não sei em inglês ,_,)</h1>
         <!--
             Anatomia para tabelas grandes:
