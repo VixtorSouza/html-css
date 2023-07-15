@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sla</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:rgb(157, 102, 209);
+        }
+        th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        td {
+            border: 1px dotted black;
+            padding: 3px;
+        }
+        table {
+            border-collapse: collapse;
+            width:500px;
+            
+        }
+        caption {
+            font-weight: bold;
+            padding: 5px;
+            font-size: 1.3em;
+        }
+        col.cinza {
+            background-color: lightgray;
+        }
+        col.azul {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <!--Indagação do video: 
+        Como destacar coluna?? conseguimos facilmente colocar background em row, mas em col.. ?
+
+        R: 
+        Use <colgroup> e dentro dela <col>
+            pq?
+            -colgroup junta as colunas 
+            -col representa cada coluna
+            - O parametro span="" pega a colunas faltante e junta
+        
+    -->
+    <table>
+        <colgroup>
+            <col class="azul">
+            <col class="cinza" span="3" >
+          
+        </colgroup>
+
+        <caption>
+            Cadastro
+        </caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Victor</td>
+            <td>M</td>
+            <td>18</td>
+            <td>Programador</td>
+
+        </tr>
+
+        <tr>
+            <td>Gabriela</td>
+            <td>F</td>
+            <td>30</td>
+            <td>Advogado</td>
+        </tr>
+        <tr>
+            <td>Iago</td>
+            <td>M</td>
+            <td>18</td>
+            <td>Editor de video</td>
+        </tr>
+
+        <tr>
+            <td>Melissa</td>
+            <td>F</td>
+            <td>60</td>
+            <td>Biologa</td>
+        </tr>
+
+        <tr>
+            <td>Henry</td>
+            <td>M</td>
+            <td>45</td>
+            <td>Engenheiro Civil</td>
+        </tr>
+    </table>
+</body>
+</html>
