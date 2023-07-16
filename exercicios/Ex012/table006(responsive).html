@@ -7,6 +7,7 @@
     <style>
         body {
             font-family:Arial, Helvetica, sans-serif;
+            background-color: lightgreen;
         }
         th, td {
             border:1px solid black;
@@ -15,154 +16,425 @@
         }
         table {
             border-collapse: collapse;
+            position: relative;
+            background-color: lightgray;
         }
         caption {
             font-size: 1.2em;
             font-weight: bolder;
             padding: 10px;
+            background-color: rgb(117, 202, 117);
+            width: 195px;
+            height: 15px;
+            margin:auto;
+            text-shadow: 1px 1px 1px black;
+            
         }
-        
+
+        td {
+             border: 1px dotted black;
+        }
+        div#container {
+            overflow-x: auto;
+            /*Overflow: são coisas que transbordam 
+            que deixa rolagem lateral(x) e vertical(x)
+            ou pode ser nos dois eixos.
+            
+            Parametros basicos: 
+            auto; - 
+            hidden; -
+            scroll -
+
+            *Colando dentro de um container o elemento que transbordam e aplicar o overflow acontece de somente o conteudo que está dentro possui
+            rolagem lateral.
+            *
+            */
+        }
+
+        thead {
+            position: sticky;
+            top: 0px;
+            background-color:black;
+            color: white;
+        }
+        tbody > tr:hover {
+            border: 1.5px solid rgb(23, 9, 226);
+            font-weight: bolder;
+        }
     </style>
 </head>
 <body>
     <h1>Table resposive</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid optio ipsum quia aut sed tempora ullam doloribus non minima. Culpa et tempora dignissimos quas, consequuntur delectus mollitia provident natus. Ducimus.</p>
     
-    <table>
-        <caption>
-            Tabelas resposivas
-        </caption>
-        <tr>
-            <thead>
-                <th>Produto</th>
-                <th>Jan</th>
-                <th>Fev</th>
-                <th>Mar</th>
-                <th>Abr</th>
-                <th>Mai</th>
-                <th>Jun</th>
-                <th>Jul</th>
-                <th>Ago</th>
-                <th>Set</th>
-                <th>Out</th>
-                <th>Nov</th>
-                <th>Dez</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Tv 40°</td>
-                    <td>01</td>
-                    <td>04</td>
-                    <td>07</td>
-                    <td>12</td>
-                    <td>12</td>
-                    <td>10</td>
-                    <td>05</td>
-                    <td>02</td>
-                    <td>01</td>
-                    <td>01</td>
-                    <td>04</td>
-                    <td>16</td>
-                </tr>
-                <tr>
-                    <td>Home Theater</td>
-                    <td>01</td>
-                    <td>04</td>
-                    <td>07</td>
-                    <td>12</td>
-                    <td>12</td>
-                    <td>10</td>
-                    <td>05</td>
-                    <td>02</td>
-                    <td>01</td>
-                    <td>01</td>
-                    <td>04</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td>Samsung Galaxy S23</td>
-                    <td>01</td>
-                    <td>04</td>
-                    <td>07</td>
-                    <td>12</td>
-                    <td>12</td>
-                    <td>10</td>
-                    <td>05</td>
-                    <td>02</td>
-                    <td>01</td>
-                    <td>01</td>
-                    <td>04</td>
-                    <td>15</td>
+    <div id="container">
+        <table>
+            <caption>
+                Tabelas resposivas
+            </caption>
+            
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Jan</th>
+                        <th>Fev</th>
+                        <th>Mar</th>
+                        <th>Abr</th>
+                        <th>Mai</th>
+                        <th>Jun</th>
+                        <th>Jul</th>
+                        <th>Ago</th>
+                        <th>Set</th>
+                        <th>Out</th>
+                        <th>Nov</th>
+                        <th>Dez</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tv 40°</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Home Theater</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Samsung Galaxy S23</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Ipad Mini </td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>15</td>
+        
+                    </tr>
+                    <tr>
+                        <td>PlayStation 04</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Lava louça</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Amazon Echo</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>15</td>
 
-                </tr>
+                        <tr>
+                            <td>Tv 40°</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>07</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>10</td>
+                            <td>05</td>
+                            <td>02</td>
+                            <td>01</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>Home Theater</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>07</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>10</td>
+                            <td>05</td>
+                            <td>02</td>
+                            <td>01</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Samsung Galaxy S23</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>07</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>10</td>
+                            <td>05</td>
+                            <td>02</td>
+                            <td>01</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Ipad Mini </td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>07</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>10</td>
+                            <td>05</td>
+                            <td>02</td>
+                            <td>01</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>15</td>
+            
+                        </tr>
+                        <tr>
+                            <td>PlayStation 04</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>07</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>10</td>
+                            <td>05</td>
+                            <td>02</td>
+                            <td>01</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Lava louça</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>07</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>10</td>
+                            <td>05</td>
+                            <td>02</td>
+                            <td>01</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Amazon Echo</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>07</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>10</td>
+                            <td>05</td>
+                            <td>02</td>
+                            <td>01</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>15</td>
 
-                <tr>
-
-                    <td>Ipad Mini </td>
-                    <td>01</td>
-                    <td>04</td>
-                    <td>07</td>
-                    <td>12</td>
-                    <td>12</td>
-                    <td>10</td>
-                    <td>05</td>
-                    <td>02</td>
-                    <td>01</td>
-                    <td>01</td>
-                    <td>04</td>
-                    <td>15</td>
-                    
-                </tr>
-
-                <tr>
-                    <td>PlayStation 04</td>
-                    <td>01</td>
-                    <td>04</td>
-                    <td>07</td>
-                    <td>12</td>
-                    <td>12</td>
-                    <td>10</td>
-                    <td>05</td>
-                    <td>02</td>
-                    <td>01</td>
-                    <td>01</td>
-                    <td>04</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td>Lava louça</td>
-                    <td>01</td>
-                    <td>04</td>
-                    <td>07</td>
-                    <td>12</td>
-                    <td>12</td>
-                    <td>10</td>
-                    <td>05</td>
-                    <td>02</td>
-                    <td>01</td>
-                    <td>01</td>
-                    <td>04</td>
-                    <td>15</td>
-                </tr>
-
-                <tr>
-                    <td>Amazon Echo</td>
-                    <td>01</td>
-                    <td>04</td>
-                    <td>07</td>
-                    <td>12</td>
-                    <td>12</td>
-                    <td>10</td>
-                    <td>05</td>
-                    <td>02</td>
-                    <td>01</td>
-                    <td>01</td>
-                    <td>04</td>
-                    <td>15</td>
-                </tr>
-            </tbody>
-        </tr>
-    </table>
+                            <tr>
+                                <td>Tv 40°</td>
+                                <td>01</td>
+                                <td>04</td>
+                                <td>07</td>
+                                <td>12</td>
+                                <td>12</td>
+                                <td>10</td>
+                                <td>05</td>
+                                <td>02</td>
+                                <td>01</td>
+                                <td>01</td>
+                                <td>04</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>Home Theater</td>
+                                <td>01</td>
+                                <td>04</td>
+                                <td>07</td>
+                                <td>12</td>
+                                <td>12</td>
+                                <td>10</td>
+                                <td>05</td>
+                                <td>02</td>
+                                <td>01</td>
+                                <td>01</td>
+                                <td>04</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>Samsung Galaxy S23</td>
+                                <td>01</td>
+                                <td>04</td>
+                                <td>07</td>
+                                <td>12</td>
+                                <td>12</td>
+                                <td>10</td>
+                                <td>05</td>
+                                <td>02</td>
+                                <td>01</td>
+                                <td>01</td>
+                                <td>04</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>Ipad Mini </td>
+                                <td>01</td>
+                                <td>04</td>
+                                <td>07</td>
+                                <td>12</td>
+                                <td>12</td>
+                                <td>10</td>
+                                <td>05</td>
+                                <td>02</td>
+                                <td>01</td>
+                                <td>01</td>
+                                <td>04</td>
+                                <td>15</td>
+                
+                            </tr>
+                            <tr>
+                                <td>PlayStation 04</td>
+                                <td>01</td>
+                                <td>04</td>
+                                <td>07</td>
+                                <td>12</td>
+                                <td>12</td>
+                                <td>10</td>
+                                <td>05</td>
+                                <td>02</td>
+                                <td>01</td>
+                                <td>01</td>
+                                <td>04</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>Lava louça</td>
+                                <td>01</td>
+                                <td>04</td>
+                                <td>07</td>
+                                <td>12</td>
+                                <td>12</td>
+                                <td>10</td>
+                                <td>05</td>
+                                <td>02</td>
+                                <td>01</td>
+                                <td>01</td>
+                                <td>04</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>Amazon Echo</td>
+                                <td>01</td>
+                                <td>04</td>
+                                <td>07</td>
+                                <td>12</td>
+                                <td>12</td>
+                                <td>10</td>
+                                <td>05</td>
+                                <td>02</td>
+                                <td>01</td>
+                                <td>01</td>
+                                <td>04</td>
+                                <td>15</td>
+                    </tr>
+                </tbody>
+            
+        </table>
+    </div>
     
+    <main>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis tempora animi numquam blanditiis eligendi ut voluptates, sed nostrum ab! Minus earum autem facilis quo corrupti quam amet laborum unde nesciunt.
+        Dicta consectetur perferendis temporibus minus sed saepe unde sit maxime corrupti quaerat velit porro laudantium, deserunt praesentium cumque iure eum non dolore atque excepturi quidem quis expedita mollitia. Quasi, autem.
+        Architecto neque officia consequuntur vel officiis necessitatibus ipsa sint facilis suscipit, non beatae, saepe odit voluptas quia iusto quos ducimus veniam ratione reiciendis eum asperiores quasi accusantium? Ducimus, suscipit obcaecati?
+        Nobis laborum id incidunt corrupti voluptatum porro repellendus eos, ad dolorum eum accusamus vel enim ut sit ipsam quasi beatae exercitationem. Nostrum inventore eveniet impedit quibusdam reiciendis maxime at aut.
+        Unde doloribus laboriosam officiis libero quaerat nihil modi harum, sequi explicabo expedita dolorem ea delectus ipsa reprehenderit saepe eum repellat quidem perspiciatis minima deleniti rerum assumenda nulla numquam accusamus. Corporis!
+        Suscipit quisquam ut laudantium commodi quos omnis nisi ipsa, veritatis iure illum voluptatum repellendus voluptatibus accusantium, temporibus corrupti incidunt cum cumque blanditiis placeat asperiores facilis inventore. At veritatis recusandae laborum.
+        Sequi nam rem fugit repellat doloribus dicta facere reprehenderit, cumque quam unde sed deleniti libero praesentium consequatur eligendi accusamus aut exercitationem dolorum. A eius error asperiores itaque ipsum, fugiat numquam?
+        Assumenda hic nam libero aut recusandae non impedit, ducimus aperiam sint accusantium dolore nemo. Dolorem ex, exercitationem itaque sit enim commodi rem reprehenderit rerum doloribus consectetur eaque quibusdam ut aperiam?
+        Impedit, at! Iure ullam inventore assumenda dignissimos consequuntur, ipsum, neque, maxime nobis nam soluta nisi facilis similique dolorum eum quam ab? Optio eligendi aperiam eos sint quidem eveniet facere iste.
+        Nam modi deserunt quibusdam soluta, unde magni porro iusto illo iure, eaque dicta nisi nulla ratione deleniti ipsa ex voluptas ea delectus inventore quidem aliquid nesciunt assumenda? Fugiat, voluptate consequuntur?
+        Deserunt temporibus repudiandae rerum mollitia deleniti id iste beatae dolor dolores dicta doloribus voluptatibus, nesciunt voluptatem perferendis quidem sunt facilis eligendi? Iusto quam minus repudiandae reprehenderit, cumque consequuntur vel dignissimos!
+        Excepturi, explicabo ut nemo quae corrupti necessitatibus beatae non. Dolorem, aliquam velit neque deleniti magnam architecto nihil doloremque quae excepturi qui id in, similique quos quo beatae omnis vitae non.
+        Nisi quod dolores facere mollitia, doloribus eaque aspernatur eligendi temporibus qui facilis excepturi ex commodi consectetur nostrum ut voluptatibus. Minus dignissimos saepe aut molestias in dolores quos, possimus tenetur facilis?
+        Reiciendis, nulla eos, incidunt harum odio iure voluptatum saepe rerum amet sunt quos ducimus aliquam illum ipsa, quibusdam adipisci id blanditiis beatae perspiciatis! Facilis possimus neque sit tempore placeat ipsum.
+        Earum consectetur porro libero cum ipsam? Itaque libero beatae, delectus nulla alias similique ut amet omnis animi pariatur sapiente voluptas eveniet necessitatibus quos quia quod tempora possimus voluptatem est impedit!
+        Libero porro molestias maxime? Ipsa tenetur voluptatum fuga voluptates consectetur ipsum dolor vitae, qui, doloribus minus tempore porro, tempora temporibus pariatur alias placeat quos corrupti fugit error modi? Suscipit, debitis.
+        Possimus, facere. Mollitia, porro. Fugit quis eveniet autem at, saepe sunt accusamus voluptates aperiam voluptatibus quaerat a debitis voluptatem, excepturi, tempore laborum incidunt suscipit temporibus explicabo beatae. Delectus, animi ea.
+        Voluptatum excepturi perspiciatis voluptatibus. Perspiciatis itaque, ex ab corrupti sunt quod suscipit architecto reiciendis quos assumenda alias nemo doloremque labore, dignissimos eligendi, iusto voluptatum odit dolor. Unde sint quo ducimus!
+        Perspiciatis dolorum voluptates sapiente hic eum. Mollitia amet unde quidem dolores iste nulla magni vero nesciunt. Nobis quisquam ad voluptas iste illum! Rerum vero nemo deserunt? Iure nulla odit corrupti.
+        Nam veritatis expedita reprehenderit unde ab tenetur doloribus temporibus blanditiis error aut beatae, explicabo quo ipsa quibusdam cupiditate deleniti suscipit consectetur iure ducimus iste placeat. Temporibus expedita ut dolorem beatae.</p>
+    </main>
 </body>
 </html>
