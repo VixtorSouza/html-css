@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Angkor&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+section {
+    margin: 20px;
+}
+body {
+    background-color:rgb(0, 0, 0);
+  
+}
+
+
+main {
+    background-color: white;
+    margin: 10px 20px 0px 20px;
+    padding: 10px;
+    max-width: 1300px;
+    
+}
+
+
+h1, h2, h3, p {
+    margin: 10px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 10px;
+}
+p, a {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+h1, h2 {
+    font-family: 'Epilogue', sans-serif;
+}
+
+header > p {
+    text-align: center;
+    color:#98f330;
+    margin-top: -10px;
+    text-shadow: 1px 1px 1px black;
+}
+
+header > h1 {
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: -15px;
+}
+
+a#titulo {
+    font-family: 'Angkor', cursive;
+    color:rgb(255, 194, 12);
+    text-decoration: none;
+    text-shadow: 4px 1px 1px black;
+    
+}
+
+
+
+header#cabecalho {
+    background-image: linear-gradient(to right,#011B7F ,#0124B2,#0335FF);
+    color:rgb(255, 194, 12);
+    padding: 10px;
+}
+
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+    margin: 3px;
+    text-shadow: 2px 2px 3px black;
+}
+
+
+nav > a:hover {
+    background-color: rgba(255, 255, 255, 0.372);    
+    border-radius: 15px;
+    text-decoration: underline;
+    color: lightgray;
+}
+nav > a:active {
+    color:lightslategray;
+}
+
+a#navprincipal {
+    color: yellow;
+    background-color: rgba(255, 255, 255, 0.363);
+    border-radius: 15px;
+    font-style:italic;
+}
+
+a#navprincipal:hover {
+    text-decoration: underline;    
+    color: rgb(195, 195, 3);
+}
+
+p#acessos > a {
+    background-color: lightblue;
+    color: black;
+}
+
+.inh1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top:50px;
+}
+
+section#introducao {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: rgb(37, 37, 37);
+    margin-top: 2px;
+    margin-bottom: -10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 65px;
+    border: 1px solid lightgray;
+    color:white;
+}
+
+div#image {
+    background-image:url('/imagens/enterrada_88_michael_jordan_01.jpg');
+    background-repeat: no-repeat;
+    margin: 10px;
+    padding: 10px;
+    width: 1250px;
+    height: 800px;
+    
+}
+
+div.video {
+   
+    background-color: rgb(40, 91, 143);  
+    padding: 15px;
+    padding-left: 25px;
+    box-shadow: 2px 2px 3px black;
+    margin-right: 2px;
+    margin-left: -31px;
+    margin-bottom: 50px;
+    width:1270px;
+    margin-top: 20px;
+}
+
+.p-video {
+    margin-bottom: 30px;
+}
+
+video {
+    margin: -5px;
+}
+
+p.copy {
+    text-align: center;
+    
+    
+}
+
+a.criadoo {
+    font-weight: bold;
+    text-decoration: none;
+    color:white;
+}
+
+a.criadoo:hover {
+    text-decoration: underline;
+}
+
+a.credit {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a.credit:hover {
+    text-decoration: underline;
+}
